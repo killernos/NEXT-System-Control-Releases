@@ -12,14 +12,14 @@ configuration verified for this beta; other firmware versions and hardware
 configurations are unverified.
 
 - [Release notes and package](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.1)
-- [Download the PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.1/NEXT.System.Control.v0.5.0.Beta.1.pkg)
+- [Download the PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.1/NEXT-Stage7-Revision21.pkg)
 - SHA-256: `af0c27c878172acbc1d82d220b440764cf65f2c4b77cedad9035780d6c571b09`
 
 ## Installation
 
 1. Confirm the console is a jailbroken PS4 running firmware 12.00 with
    GoldHEN. Other configurations are not verified for this beta.
-2. Download the PKG and transfer it to the console using your normal,
+2. Download `NEXT-Stage7-Revision21.pkg` and transfer it to the console using your normal,
    trusted local installation workflow.
 3. Install it with the console's package installer and launch NEXT System
    Control.
