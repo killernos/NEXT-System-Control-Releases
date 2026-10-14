@@ -6,10 +6,11 @@ repository, its source code, or its Git history.
 
 ## Latest release
 
-**v0.5.0-beta.1** is a beta package for jailbroken PlayStation 4 consoles
-running firmware **12.00 with GoldHEN**. This is the only firmware and
-configuration verified for this beta; other firmware versions and hardware
-configurations are unverified.
+**v0.5.0-beta.1** is a beta package for jailbroken PlayStation 4 consoles.
+Hardware testing has been confirmed on firmware **12.00 with GoldHEN** and
+also on firmware **13.52**. The GoldHEN configuration for the 13.52 test was
+not specified. Other firmware versions and hardware configurations are
+unverified.
 
 - [Release notes and package](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.1)
 - [Download the PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.1/NEXT-Stage7-Revision21.pkg)
@@ -17,8 +18,10 @@ configurations are unverified.
 
 ## Installation
 
-1. Confirm the console is a jailbroken PS4 running firmware 12.00 with
-   GoldHEN. Other configurations are not verified for this beta.
+1. Confirm the console is a jailbroken PS4 running firmware 12.00 or 13.52.
+   GoldHEN was confirmed for the 12.00 hardware test; configuration details
+   for the 13.52 test were not specified. Other firmware versions and
+   configurations are unverified for this beta.
 2. Download `NEXT-Stage7-Revision21.pkg` and transfer it to the console using your normal,
    trusted local installation workflow.
 3. Install it with the console's package installer and launch NEXT System
@@ -32,8 +35,9 @@ compatibility behavior may vary by console setup.
 ## Beta limitations and safety
 
 - This is beta software, not a stable production release.
-- Only firmware 12.00 with GoldHEN has been hardware-verified for this
-  release. No compatibility claim is made for other firmware versions.
+- Hardware testing has been confirmed on firmware 12.00 with GoldHEN and
+  separately on firmware 13.52. The 13.52 GoldHEN configuration was not
+  specified. No compatibility claim is made for other firmware versions.
 - FTP traffic is not protected by TLS. Use it only on a trusted, isolated
   local network and only when needed.
 - SSH and FTP must not be exposed to the public internet.
