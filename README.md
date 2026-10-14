@@ -1,55 +1,45 @@
 # NEXT System Control — Public Releases
 
-This repository distributes signed NEXT System Control release packages and
-release information only. It does not contain the private development
-repository, its source code, or its Git history.
+Official public downloads for NEXT System Control PS4 homebrew. This repository contains release information and package downloads only; the development source and Git history remain private.
 
-## Latest release
+## Latest release — v0.5.0 Beta 2
 
-**v0.5.0-beta.1** is a beta package for jailbroken PlayStation 4 consoles.
-Hardware testing has been confirmed on firmware **12.00 with GoldHEN** and
-also on firmware **13.52**. The GoldHEN configuration for the 13.52 test was
-not specified. Other firmware versions and hardware configurations are
-unverified.
+**[Download NEXT System Control Beta 2 PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.2/NEXT.System.Control.v0.5.0.Beta.2.pkg)**
 
-- [Release notes and package](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.1)
-- [Download the PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.1/NEXT-Stage7-Revision21.pkg)
+[Beta 2 release notes](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.2) · [All releases](https://github.com/killernos/NEXT-System-Control-Releases/releases) · [Official website](https://killernos.github.io/NEXT-System-Control-Website/)
+
+**Package:** `NEXT.System.Control.v0.5.0.Beta.2.pkg`  
+**SHA-256:** `0d6cca91b8f2c4958915fcc9805aaac606534d8db4e7a0f8752d0490333fd3f3`  
+**PS4 title ID:** `NEXT00034` (side-by-side test package; verify it is unused before installation)
+
+### What's new in Beta 2
+
+- Controller-driven dashboard theme selector and Tool Library
+- Six selectable themes with saved preferences
+- Explorer/Developer startup selector refinements
+- Dashboard icon alignment improvements
+
+### Validation
+
+The PC simulator regression suite passed 6/6 tests, and the OpenOrbis ELF/FSELF build and package generation completed. A PS4 user reported that this Beta 2 build works, but firmware, test count, and individual hardware coverage were not recorded. **Broader firmware compatibility is not verified.**
+
+## Previous release — v0.5.0 Beta 1
+
+- [Beta 1 release notes](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.1)
+- [Download Beta 1 PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.1/NEXT.System.Control.v0.5.0.Beta.1.pkg)
 - SHA-256: `af0c27c878172acbc1d82d220b440764cf65f2c4b77cedad9035780d6c571b09`
 
-## Installation
+Beta 1's Revision 21 testing was reported on firmware 12.00 with GoldHEN and separately on 13.52 (GoldHEN configuration not specified for 13.52).
 
-1. Confirm the console is a jailbroken PS4 running firmware 12.00 or 13.52.
-   GoldHEN was confirmed for the 12.00 hardware test; configuration details
-   for the 13.52 test were not specified. Other firmware versions and
-   configurations are unverified for this beta.
-2. Download `NEXT-Stage7-Revision21.pkg` and transfer it to the console using your normal,
-   trusted local installation workflow.
-3. Install it with the console's package installer and launch NEXT System
-   Control.
-4. Enable network services only when needed. Keep them on a trusted local
-   network; never forward their ports to the internet.
+## Installation and safety
 
-Back up important data before installing beta software. Installation and
-compatibility behavior may vary by console setup.
+1. Review the release notes and confirm your console's firmware and setup are appropriate.
+2. Verify the downloaded PKG checksum and the title ID before installing.
+3. Back up important data and install using your usual trusted PS4 package installation workflow.
+4. Enable network services only when needed, on a trusted isolated local network.
 
-## Beta limitations and safety
-
-- This is beta software, not a stable production release.
-- Hardware testing has been confirmed on firmware 12.00 with GoldHEN and
-  separately on firmware 13.52. The 13.52 GoldHEN configuration was not
-  specified. No compatibility claim is made for other firmware versions.
-- FTP traffic is not protected by TLS. Use it only on a trusted, isolated
-  local network and only when needed.
-- SSH and FTP must not be exposed to the public internet.
-- The filesystem browser supports a limited set of directories.
-- The filesystem browser does not enable root privilege transitions or
-  unrestricted filesystem modification.
-- Normal application exit behavior still needs compatibility testing across
-  configurations.
+**Beta limitations:** This is not a stable production release. FTP is unencrypted; do not expose SSH or FTP to the internet. Filesystem access remains limited. This release does not enable unrestricted filesystem modifications or automatic privilege elevation. Compatibility varies by console.
 
 ## Repository scope
 
-This is a release-distribution repository. Development source and its history
-remain in the private
-[NEXT-System-Control](https://github.com/killernos/NEXT-System-Control)
-repository and are not copied here.
+This is a **public releases-only** repository. The private `killernos/NEXT-System-Control` development repository, its source, and its Git history are not distributed here. GitHub automatically offers source archives of this small public releases repository alongside release assets.
