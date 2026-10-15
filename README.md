@@ -2,11 +2,11 @@
 
 Official public downloads for NEXT System Control PS4 homebrew. This repository contains release information and package downloads only; the development source and Git history remain private.
 
-## Latest release — v0.5.0 Beta 3 (Debugger Diagnostic)
+## Latest release — v0.5.0 Beta 3 (Six Themes & Debugger Diagnostic)
 
 **[Download NEXT System Control Beta 3 PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.3/NEXT.System.Control.v0.5.0.Beta.3.pkg)**
 
-[Beta 3 diagnostic notes](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.3) · [All releases](https://github.com/killernos/NEXT-System-Control-Releases/releases) · [Official website](https://killernos.github.io/NEXT-System-Control-Website/)
+[Beta 3 release notes](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.3) · [All releases](https://github.com/killernos/NEXT-System-Control-Releases/releases) · [Official website](https://killernos.github.io/NEXT-System-Control-Website/)
 
 **Package:** `NEXT.System.Control.v0.5.0.Beta.3.pkg`
 
@@ -14,28 +14,48 @@ Official public downloads for NEXT System Control PS4 homebrew. This repository 
 
 **PS4 title ID:** `NEXT00053` (a separate application entry from earlier builds).
 
-**Important diagnostic result:** the maintainer tested this exact package on
+**Main feature:** the dashboard includes six selectable themes—Matrix Green,
+Cyber Blue, Royal Purple, Crimson Red, Amber Gold, and Monochrome—along with
+Explorer/Developer startup modes, saved preferences, and the Tool Library.
+
+**Debugger diagnostic result:** the maintainer tested this exact package on
 PS4. NEXT targeted the detected console-local IPv4 on TCP 744, but the
 connection was refused (`errno 61`). This does not confirm that ps4debug-NG
-started or that a server is listening; Beta 3 is published as a diagnostic
-build, not as a claim that debugger connectivity is fixed.
+started or that a server is listening. The debugger connection remains
+unverified; this diagnostic result does not negate the separately tested
+dashboard and theme functionality.
 
-### Beta 3 diagnostic change
+### Dashboard and themes
+
+- Rounded dashboard panels, clear focus indicators, and compact system-status
+  cards.
+- Six themes: Matrix Green (default), Cyber Blue, Royal Purple, Crimson Red,
+  Amber Gold, and Monochrome. Open the selector with Square from System Info;
+  choose with the D-pad and apply with Cross.
+- The startup mode selector follows the selected theme.
+- Explorer and Developer startup modes; Developer tools remain
+  capability-gated and mode selection does not automatically elevate or start
+  network services.
+- Tool Library with categories, favorites, recents, native keyboard search,
+  and saved theme/category preferences.
+- Restored native PS4 password entry, improved SSH reconnect behavior, and
+  dashboard banner/icon alignment fixes.
+
+### Additional debugger diagnostic
 
 - Manual read-only debugger queries use the console's freshly detected local
   IPv4 address on TCP port 744 instead of assuming PS4 loopback routing.
 - The address comes from NEXT's network snapshot; arbitrary remote targets are
-  not accepted.
-- No query runs automatically; the user must request it from the diagnostic
-  screen. NEXT does not load or resend a payload, attach to processes, access
-  process memory, alter the kernel, or elevate privileges.
+  not accepted. No query runs automatically.
+- NEXT does not load or resend a payload, attach to processes, access process
+  memory, alter the kernel, or elevate privileges.
 
 OpenOrbis PS4 compilation, FSELF, package generation, ASan/UBSan debugger
 tests, the real Linux loopback protocol test, and UI regression test passed.
 
 - [Release notes and package](https://github.com/killernos/NEXT-System-Control-Releases/releases/tag/v0.5.0-beta.3)
 - [Download the PKG](https://github.com/killernos/NEXT-System-Control-Releases/releases/download/v0.5.0-beta.3/NEXT.System.Control.v0.5.0.Beta.3.pkg)
-- [Diagnostic details](v0.5.0-beta.3.md)
+- [Full release details, dashboard controls, and diagnostic result](v0.5.0-beta.3.md)
 
 ## Previous release — v0.5.0 Beta 2
 
